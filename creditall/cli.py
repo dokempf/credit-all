@@ -45,7 +45,7 @@ def add():
     # Collect data about the new contributor
     data = {}
     data["name"] = prompt('What is the name of the contributor? ')
-    data["contributions"] = prompt('What are the contribution types for this contributor? (comma separated list)').split(",")
+    data["contributions"] = prompt('What are the contribution types for this contributor? (comma separated list) ').split(",")
 
     # Update the data file
     with open('.all-contributorsrc', 'r') as rcfile:
@@ -84,6 +84,25 @@ def publication(path):
     )
 
 
+@click.command()
+@click.argument('path', type=click.Path(exists=True), default=os.getcwd())
+def csv(path):
+    # Find the .all-contributorsrc file
+    filename = os.path.join(path, '.all-contributorsrc')
+    if not os.path.exists(filename):
+        raise FileNotFoundError(f'No .all-contributorsrc file found at {filename}')
+
+    # Define a name for the output - could be made configurable later
+    outputfile = os.path.join(os.getcwd(), "contributors.csv")
+
+    # Render the Jinja2 template with the given data
+    render_output(
+        filename,
+        "contributors.csv",
+        outputfile
+    )
+
+
 # Construct nested commands
 @click.group(cls=DefaultGroup, default='readme', default_if_no_args=True)
 def generate():
@@ -92,7 +111,7 @@ def generate():
 
 generate.add_command(readme)
 generate.add_command(publication)
-
+generate.add_command(csv)
 
 
 @click.group()
