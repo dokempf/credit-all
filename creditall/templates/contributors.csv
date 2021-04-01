@@ -1,0 +1,3 @@
+{% for c in contributors -%}
+{{ c.name }}, {{ c.login }}
+{%- endfor %}
