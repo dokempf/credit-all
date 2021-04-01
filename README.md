@@ -47,6 +47,8 @@ In this project, we propose to:
 ## Who are we?
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+In alphabetical order:
+* Dominic Kempf (Initial ideas of the project, Writing a contributors guide)* Emma Karoune (Writing a code of conduct)
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## What does this project need?
