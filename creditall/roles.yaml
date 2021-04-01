@@ -1,5 +1,21 @@
-roles:
-  code:
-    description: Code Development
-  doc:
-    description: Documentation
+roles: 
+  communications-blogposts: 
+    description: Writing a blog post
+  communication-communication_strategy: 
+    description: Formulating the communication strategy
+  community_building-code_of_conduct: 
+    description: Writing a code of conduct
+  community_building-contributor_guide: 
+    description: Writing a contributors guide
+  conceptualization-ideas: 
+    description: Initial ideas of the project
+  conceptualization-research_aims: 
+    description: Formulating research aims
+  data_curation-curation: 
+    description: Curating data
+  data_curation-publication: 
+    description: Publishing data
+  formal_analysis-computational_analysis: 
+    description: Conducting computational analysis
+  formal_analysis-data_visualization: 
+    description: Data visualisation
