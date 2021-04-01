@@ -19,3 +19,20 @@ roles:
     description: Conducting computational analysis
   formal_analysis-data_visualization: 
     description: Data visualisation
+  funding_acquisition-administering: 
+    description: Administering funding application
+  funding_acquisition-grant_sourcing: 
+    description: Finding sources of grants and funding
+  investigation-conducting_experiments: 
+    description: Conducting experiments
+  investigation-fieldwork: 
+    description: Conducting fieldwork
+  methodology-designing_computational: 
+    description: Designing computational methodlogies
+  methodology-designing_experimental: 
+    description: Designing experimental methodologies
+  project_admin-ethical_reporting: 
+    description: Administration for ethical reporting
+  project_admin-formal_reporting: 
+    description: Administration for formal reporting
+  
