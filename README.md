@@ -34,7 +34,7 @@ Taking inspiration from Malin Sandstroms Lightning talk at the Software Sustaina
 
 In this project, we propose to:
 * Expand current lists to be more inclusive - using current systems such as CRediT, INRIA, BIDS Contributors.
-* Develop a tool to be used to record these contributions during the project such as within a Github repository. 
+* Develop a tool to be used to record these contributions during the project such as within a Github repository - we have adapted the [All Contributor](https://allcontributors.org/) bot for our tool.
 * Develop a way that this can be shown on academic papers - lists, table, cinema title page? (look at e.g. Brainhack paper w 100+ authors and Living with machines).
 
 
