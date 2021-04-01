@@ -21,7 +21,7 @@ def generate():
 
 @click.command()
 def check():
-    click.echo('Doing all-contributors "check"...')
+    click.echo('The "check" functionality of all-contributors CLI is currently not available in creditall...')
 
 
 @click.command()
@@ -38,17 +38,21 @@ def readme(path):
 @click.command()
 @click.argument('path', type=click.Path(exists=True), default=os.getcwd())
 def publication(path):
+    # Find the .all-contributorsrc file
     filename = os.path.join(path, '.all-contributorsrc')
     if not os.path.exists(filename):
         raise FileNotFoundError(f'No .all-contributorsrc file found at {filename}')
 
+    # Define a name for the output - could be made configurable later
     outputfile = os.path.join(os.getcwd(), "publication.tex")
 
+    # Render the Jinja2 template with the given data
     render_output(
         filename,
         "publication.tex",
         outputfile
     )
+
 
 # Construct nested commands
 generate.add_command(readme)
