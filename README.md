@@ -28,7 +28,7 @@ The current problems include:
 Taking inspiration from Malin Sandstroms Lightning talk at the Software Sustainability Institutes Collaboration Workshop 2021, in which she proposed to combine the current contributions approaches.
 
 
-![Sandstrom 2021](sandstrom2021.jpg)
+![Sandstrom 2021](https://github.com/dokempf/credit-all/blob/master/Sandstrom2021.jpg)
 
 *Slide from Malin Sandstrom's SSI talk*
 
