@@ -1,2 +1,2 @@
-recursive-include templates/*
-include roles.yaml
+recursive-include creditall/templates/*
+include creditall/roles.yaml
