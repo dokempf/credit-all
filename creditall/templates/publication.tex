@@ -1,8 +1,6 @@
-Documentation contributions:
+Contributors:
 \begin{itemize}
 {% for c in contributors -%}
-  {% if 'doc' in c.contributions %}
-    \item {{ c.name }}
-  {%- endif %}
-{%- endfor %}
+  \item {{ c.name }} ({% for t in c.contributions %}{{ types[t]['description'] }}{{ ", " if not loop.last }}{% endfor %})
+{% endfor -%}
 \end{itemize}
