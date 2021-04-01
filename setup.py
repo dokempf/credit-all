@@ -14,6 +14,7 @@ setup(
         "click-default-group",
         "jinja2",
         "prompt_toolkit",
+        "pyaml",
     ],
     include_package_data=True,
 )

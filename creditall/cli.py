@@ -1,6 +1,8 @@
 import click
 import json
 import os
+import yaml
+
 from click_default_group import DefaultGroup
 from creditall.generate import render_output
 from prompt_toolkit import prompt
@@ -20,7 +22,10 @@ def init():
     # minimalistic for now
     data["projectName"] = prompt("What's the name of the repository? ")
 
-    # TODO: Add the taxonomy!
+    # Locate the roles.yaml file on the file system and add it to the data
+    path, _ = os.path.split(__file__)
+    with open(os.path.join(path, "roles.yaml")) as rolesfiles:
+        data["types"] = yaml.safe_load(rolesfiles)["roles"]
 
     # Already add the contributors field - although empty
     data["contributors"] = []
