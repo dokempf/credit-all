@@ -2,10 +2,24 @@ import click
 import json
 import os
 import yaml
+import sys
 
 from click_default_group import DefaultGroup
 from creditall.generate import render_output
 from prompt_toolkit import prompt
+
+
+def read_rcdata(path=os.getcwd()):
+    filename = os.path.join(path, '.all-contributorsrc')
+
+    # Check whether the rc file already exists
+    if not os.path.exists('.all-contributorsrc'):
+        click.echo('Please run the "init" command before any other command')
+        sys.exit(1)
+
+    # Read the rcdata
+    with open('.all-contributorsrc', 'r') as rcfile:
+        return json.load(rcfile)
 
 
 @click.command()
@@ -42,20 +56,14 @@ def check():
 
 @click.command()
 def add():
-    # Check whether the rc file already exists
-    if not os.path.exists('.all-contributorsrc'):
-        click.echo('Please run the "init" command before the add command')
-        return
+    # Read the current configuration file
+    rcdata = read_rcdata()
 
     # Collect data about the new contributor
     data = {}
     data["name"] = prompt('What is the name of the contributor? ')
     contrib = prompt('What are the contribution types for this contributor? (comma separated list) ')
     data["contributions"] = [c.strip() for c in contrib.split(",")]
-
-    # Update the data file
-    with open('.all-contributorsrc', 'r') as rcfile:
-        rcdata = json.load(rcfile)
 
     # Add the new contributor data
     rcdata["contributors"].append(data)
@@ -68,7 +76,39 @@ def add():
 @click.command()
 @click.argument('path', type=click.Path(exists=True), default=os.getcwd())
 def readme(path):
-    click.echo('This should generate the README bits, but does not yet')
+    rcdata = read_rcdata(path)
+
+    # Iterate over the target files that have been specified in the configuration
+    for target in rcdata.get("files", ["README.md"]):
+        targetfilename = os.path.join(path, target)
+
+        # Read the file header and footers:
+        header = []
+        footer = []
+        with open(targetfilename, 'r') as targetfile:
+            for line in targetfile:
+                if line.startswith('<!-- ALL-CONTRIBUTORS-LIST:START'):
+                    break
+                header.append(line)
+
+            for line in targetfile:
+                if line.startswith('<!-- ALL-CONTRIBUTORS-LIST:END'):
+                    break
+
+            for line in targetfile:
+                footer.append(line)
+
+        # Rewrite the README file
+        with open(targetfilename, 'w') as targetfile:
+            for line in header:
+                targetfile.write(line)
+
+            targetfile.write('<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->\n')
+            targetfile.write(render_output(os.path.join(path, '.all-contributorsrc'), "README.md", None))
+            targetfile.write('<!-- ALL-CONTRIBUTORS-LIST:END -->\n')
+
+            for line in footer:
+                targetfile.write(line)
 
 
 @click.command()

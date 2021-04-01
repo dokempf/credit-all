@@ -27,5 +27,12 @@ def render_output(datafile, template, outputfile):
     # Construct the data context for the template rendering
     ctx = generate_context(datafile)
 
-    with open(outputfile, 'w') as outfile:
-        outfile.write(env.get_template(template).render(**ctx))
+    # Render the template
+    rendering = env.get_template(template).render(**ctx)
+
+    # And maybe write it to a file:
+    if outputfile is not None:
+        with open(outputfile, 'w') as outfile:
+            outfile.write(rendering)
+
+    return rendering
