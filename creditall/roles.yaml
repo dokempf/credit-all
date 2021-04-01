@@ -39,3 +39,22 @@ roles:
     description: Providing project infrastructure hardware
   resources-infrastructure_software: 
     description: Providing project infrastructure software
+  software-coding_newcode: 
+    description: Writing new code
+  software-documentation: 
+    description: Writing documentation about the code
+  supervision-performance_review: 
+    description: Doing performance review for team members
+  supervision-pull_requests: 
+    description: Reviewing pull requests
+  training-mentoring_new: 
+    description: Mentoring new contributors
+  training-material_curation: 
+    description: Creating training materials
+  validation-user_testing: 
+    description: User testing
+  validation-quality_control: 
+    description: Quality control
+ 
+  
+  
