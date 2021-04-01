@@ -50,7 +50,8 @@ def add():
     # Collect data about the new contributor
     data = {}
     data["name"] = prompt('What is the name of the contributor? ')
-    data["contributions"] = prompt('What are the contribution types for this contributor? (comma separated list) ').split(",")
+    contrib = prompt('What are the contribution types for this contributor? (comma separated list) ')
+    data["contributions"] = [c.strip() for c in contrib.split(",")]
 
     # Update the data file
     with open('.all-contributorsrc', 'r') as rcfile:
