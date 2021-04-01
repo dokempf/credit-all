@@ -27,6 +27,11 @@ The current problems include:
 ### The solution
 Taking inspiration from Malin Sandstroms Lightning talk at the Software Sustainability Institutes Collaboration Workshop 2021, in which she proposed to combine the current contributions approaches.
 
+
+![Sandstrom 2021](sandstrom2021.jpg)
+
+*Slide from Malin Sandstrom's SSI talk*
+
 In this project, we propose to:
 * Expand current lists to be more inclusive - using current systems such as CRediT, INRIA, BIDS Contributors.
 * Develop a tool to be used to record these contributions during the project such as within a Github repository. 
