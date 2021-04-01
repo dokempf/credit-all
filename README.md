@@ -1,5 +1,5 @@
-## Welcome!
-Thanks for visiting Credit All! 😁
+# Welcome!
+## Thanks for visiting Credit All! 😁
 
 In this document you can find lots of information about this project. You can just scroll down or use the quick links below for each section.
 
@@ -18,7 +18,7 @@ We think it is important that all contributions are recorded and therefore every
 ### The problem
 Current systems that attribute contributions to authors in academic outputs do not include all of the jobs/roles/tasks that are encompassed in research projects. 
 
-This include:
+The current problems include:
 * Capturing all roles on a project.
 * Capturing all tasks within those roles.
 * How to convert this into the actual authorship or contributions list that can be used for project outputs.
@@ -27,16 +27,25 @@ This include:
 ### The solution
 Taking inspiration from Malin Sandstroms Lightning talk at the Software Sustainability Institutes Collaboration Workshop 2021, in which she proposed to combine the current contributions approaches.
 
-
+In this project, we propose to:
+* Expand current lists to be more inclusive - using current systems such as CRediT, INRIA, BIDS Contributors.
+* Develop a tool to be used to record these contributions during the project such as within a Github repository. 
+* Develop a way that this can be shown on academic papers - lists, table, cinema title page? (look at e.g. Brainhack paper w 100+ authors and Living with machines).
 
 
 ## Who are we?
-
+In alphabetical order:
+* Emma Karoune
+* Dominic Kempf
+* Daisy Parry
+* Malin Sandstrom
 
 ## What does this project need?
 
 ### We need you! 
  * Please review our list of tasks and tell us if something needs to be added.
+ * Spot a bug and tell us about it!
+ * Suggest new ways that our contributions list can be presented.
 
 If you have any feedback on the work that is going on, then please get in contact.
 
