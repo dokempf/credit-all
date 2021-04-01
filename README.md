@@ -8,6 +8,7 @@ In this document you can find lots of information about this project. You can ju
   - [What is this project about and why is it important?](#what-is-this-project-about-and-why-is-it-important)
     - [The problem](#the-problem)
     - [The solution](#the-solution)
+  - [Installation](#installation)
   - [Who are we?](#who-are-we)
   - [What does this project need?](#what-does-this-project-need)
     - [We need you!](#we-need-you)
@@ -43,6 +44,13 @@ In this project, we propose to:
 * Develop a tool to be used to record these contributions during the project such as within a Github repository - we have adapted the [All Contributor](https://allcontributors.org/) bot for our tool.
 * Develop a way that this can be shown on academic papers - lists, table, cinema title page? (look at e.g. Brainhack paper w 100+ authors and Living with machines).
 
+## Installation
+
+You can install the command line tool using pip:
+
+```
+python -m pip install git+git://github.com/dokempf/credit-all.git
+```
 
 ## Who are we?
 
