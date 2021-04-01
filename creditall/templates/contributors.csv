@@ -1,3 +1,4 @@
+name{% for t in types|sort %}, {{ t }}{% endfor %}
 {% for c in contributors -%}
-{{ c.name }}, {{ c.login }}{% for t in types|sort %}, {{ "1" if t in c.contributions else "0" }}{% endfor %}
+"{{ c.name }}", {% for t in types|sort %}, {{ "1" if t in c.contributions else "0" }}{% endfor %}
 {%- endfor %}
