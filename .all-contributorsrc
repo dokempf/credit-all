@@ -1,0 +1,120 @@
+{
+  "projectName": "creditall",
+  "types": {
+    "communications-blogposts": {
+      "description": "Writing a blog post"
+    },
+    "communication-communication_strategy": {
+      "description": "Formulating the communication strategy"
+    },
+    "community_building-code_of_conduct": {
+      "description": "Writing a code of conduct"
+    },
+    "community_building-contributor_guide": {
+      "description": "Writing a contributors guide"
+    },
+    "conceptualization-ideas": {
+      "description": "Initial ideas of the project"
+    },
+    "conceptualization-research_aims": {
+      "description": "Formulating research aims"
+    },
+    "data_curation-curation": {
+      "description": "Curating data"
+    },
+    "data_curation-publication": {
+      "description": "Publishing data"
+    },
+    "formal_analysis-computational_analysis": {
+      "description": "Conducting computational analysis"
+    },
+    "formal_analysis-data_visualization": {
+      "description": "Data visualisation"
+    },
+    "funding_acquisition-administering": {
+      "description": "Administering funding application"
+    },
+    "funding_acquisition-grant_sourcing": {
+      "description": "Finding sources of grants and funding"
+    },
+    "investigation-conducting_experiments": {
+      "description": "Conducting experiments"
+    },
+    "investigation-fieldwork": {
+      "description": "Conducting fieldwork"
+    },
+    "methodology-designing_computational": {
+      "description": "Designing computational methodlogies"
+    },
+    "methodology-designing_experimental": {
+      "description": "Designing experimental methodologies"
+    },
+    "project_admin-ethical_reporting": {
+      "description": "Administration for ethical reporting"
+    },
+    "project_admin-formal_reporting": {
+      "description": "Administration for formal reporting"
+    },
+    "resources-infrastructure_hardware": {
+      "description": "Providing project infrastructure hardware"
+    },
+    "resources-infrastructure_software": {
+      "description": "Providing project infrastructure software"
+    },
+    "software-coding_newcode": {
+      "description": "Writing new code"
+    },
+    "software-documentation": {
+      "description": "Writing documentation about the code"
+    },
+    "supervision-performance_review": {
+      "description": "Doing performance review for team members"
+    },
+    "supervision-pull_requests": {
+      "description": "Reviewing pull requests"
+    },
+    "training-mentoring_new": {
+      "description": "Mentoring new contributors"
+    },
+    "training-material_curation": {
+      "description": "Creating training materials"
+    },
+    "validation-user_testing": {
+      "description": "User testing"
+    },
+    "validation-quality_control": {
+      "description": "Quality control"
+    }
+  },
+  "contributors": [
+    {
+      "name": "Dominic Kempf",
+      "contributions": [
+        "conceptualization-ideas",
+        "software-coding_newcode",
+        "software-documentation"
+      ]
+    },
+    {
+      "name": "Malin Sandstr\u00f6m",
+      "contributions": [
+        "conceptualization-ideas",
+        "data_curation-curation"
+      ]
+    },
+    {
+      "name": "Emma Karoune",
+      "contributions": [
+        "conceptualization-ideas",
+        "data_curation-curation"
+      ]
+    },
+    {
+      "name": "Daisy Perry",
+      "contributions": [
+        "community_building-code_of_conduct",
+        "data_curation-curation"
+      ]
+    }
+  ]
+}

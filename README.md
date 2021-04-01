@@ -48,7 +48,11 @@ In this project, we propose to:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 In alphabetical order:
-* Dominic Kempf (Initial ideas of the project, Writing a contributors guide)* Emma Karoune (Writing a code of conduct)
+* Daisy Perry (Writing a code of conduct, Curating data)
+* Dominic Kempf (Initial ideas of the project, Writing new code, Writing documentation about the code)
+* Emma Karoune (Initial ideas of the project, Curating data)
+* Malin Sandström (Initial ideas of the project, Curating data)
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 ## What does this project need?
