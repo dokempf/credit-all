@@ -35,4 +35,7 @@ roles:
     description: Administration for ethical reporting
   project_admin-formal_reporting: 
     description: Administration for formal reporting
-  
+  resources-infrastructure_hardware: 
+    description: Providing project infrastructure hardware
+  resources-infrastructure_software: 
+    description: Providing project infrastructure software
