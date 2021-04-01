@@ -1,9 +1,12 @@
 ## Credit-all Code of Conduct 
 
 * Be respectful to others (thier points and communication sytles). 
-* Do not engage in homophobic, racist, transphobic, ageist, ableist, sexist, or otherwise exclusionary behavior.
 * Use welcoming and inclusive language. 
-* Do not address others in an angry, intimidating, or demeaning manner. 
 * Be considerate of the ways the words you choose may impact others. 
-* Respect the privacy and safety of others. 
-* Do not take photographs or screenshots of others without their permission. 
+* Respect the privacy and safety of others (do not take photographs or screenshots of others without their permission.) 
+* Don't be a bystander.
+* Support one another to maximise participation. 
+
+
+* Any issues relating to attendee harassement to be raised in line with CW21 Guidelines : https://software.ac.uk/cw21/participation-guidelines/harassment-reporting-procedure
+
