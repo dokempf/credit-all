@@ -1,4 +1,6 @@
+import jinja2
 import json
+import os
 
 
 def generate_context(filename):
@@ -11,4 +13,19 @@ def generate_context(filename):
     return data
 
 
-def render_output():
+def render_output(datafile, template, outputfile):
+    # Locate the templates directory correctly
+    path, _ = os.path.split(__file__)
+    template_path = os.path.join(path, "templates")
+
+    # Construct the Jinja environment
+    env = jinja2.Environment(
+        loader=jinja2.FileSystemLoader(template_path),
+        keep_trailing_newline=True,
+    )
+
+    # Construct the data context for the template rendering
+    ctx = generate_context(datafile)
+
+    with open(outputfile, 'w') as outfile:
+        outfile.write(env.get_template(template).render(**ctx))

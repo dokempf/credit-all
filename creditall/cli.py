@@ -1,5 +1,7 @@
 import click
+import os
 from click_default_group import DefaultGroup
+from creditall.generate import render_output
 
 
 @click.group()
@@ -28,14 +30,25 @@ def add():
 
 
 @click.command()
-def readme():
+@click.argument('path', type=click.Path(exists=True), default=os.getcwd())
+def readme(path):
     click.echo('Generating the files that all-contributors would generate')
 
 
 @click.command()
-def publication():
-    click.echo('Generating a snippet for a publication')
+@click.argument('path', type=click.Path(exists=True), default=os.getcwd())
+def publication(path):
+    filename = os.path.join(path, '.all-contributorsrc')
+    if not os.path.exists(filename):
+        raise FileNotFoundError(f'No .all-contributorsrc file found at {filename}')
 
+    outputfile = os.path.join(os.getcwd(), "publication.tex")
+
+    render_output(
+        filename,
+        "publication.tex",
+        outputfile
+    )
 
 # Construct nested commands
 generate.add_command(readme)
