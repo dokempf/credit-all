@@ -1,5 +1,8 @@
+Documentation contributions:
 \begin{itemize}
-{% for c in contributors %}
-  \item {{ c.name }}
-{% endfor %}
+{% for c in contributors -%}
+  {% if 'doc' in c.contributions %}
+    \item {{ c.name }}
+  {%- endif %}
+{%- endfor %}
 \end{itemize}

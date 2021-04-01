@@ -13,6 +13,7 @@ setup(
         "click",
         "click-default-group",
         "jinja2",
+        "prompt_toolkit",
     ],
     include_package_data=True,
 )
