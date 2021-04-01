@@ -1,4 +1,4 @@
-#Credit-all Code of Conduct 
+## Credit-all Code of Conduct 
 
 * Be respectful to others (thier points and communication sytles). 
 * Do not engage in homophobic, racist, transphobic, ageist, ableist, sexist, or otherwise exclusionary behavior.
