@@ -23,7 +23,7 @@ There is no one size fits all system for capturing all of the contributions duri
 We think it is important that all contributions are recorded and therefore everyone is given credit for their work more fairly.
 
 ### The problem
-Current systems that attribute contributions to authors in academic outputs do not include all of the jobs/roles/tasks that are encompassed in research projects. 
+Current systems that attribute contributions to authors in academic outputs do not include all of the jobs/roles/tasks that are encompassed in research projects.
 
 The current problems include:
 * Capturing all roles on a project.
@@ -54,7 +54,7 @@ python -m pip install git+git://github.com/dokempf/credit-all.git
 
 ## Who are we?
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- ALL-CONTRIBUTORS-LIST:START README.md - Do not remove or modify this section -->
 In alphabetical order:
 * Daisy Perry (Writing a code of conduct, Curating data)
 * Dominic Kempf (Initial ideas of the project, Writing new code, Writing documentation about the code)

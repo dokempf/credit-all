@@ -86,6 +86,12 @@
       "description": "Quality control"
     }
   },
+  "files": [
+    "README.md",
+    "template-demo/README.md",
+    "template-demo/contributors.csv",
+    "template-demo/publication.tex"
+  ],
   "contributors": [
     {
       "name": "Dominic Kempf",
