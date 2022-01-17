@@ -41,7 +41,11 @@ Taking inspiration from Malin Sandstroms Lightning talk at the Software Sustaina
 
 In this project, we propose to:
 * Expand current lists to be more inclusive - using current systems such as CRediT, INRIA, BIDS Contributors.
-* Develop a tool to be used to record these contributions during the project such as within a Github repository - we have adapted the [All Contributor](https://allcontributors.org/) bot for our tool.
+* Develop a tool to be used to record these contributions during the project such as within a Github repository. This tool builds on the established [All Contributor](https://allcontributors.org/) specification for recording contributions but adds a few extras that we consider especially valueable in a scientific context:
+  * Renderings of your contributors list are embeddable into a wide range of documents, not only on the web, but also in e.g. publications
+  * Custom templates can be provided
+  * Pre-generated list of contribution types/contributor roles from a the scientific world
+  * Python-based command line interface tool
 * Develop a way that this can be shown on academic papers - lists, table, cinema title page? (look at e.g. Brainhack paper w 100+ authors and Living with machines).
 
 ## Installation
